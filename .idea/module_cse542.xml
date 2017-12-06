@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_cse542" default="compile.module.cse542">
+  <dirname property="module.cse542.basedir" file="${ant.file.module_cse542}"/>
+  
+  <property name="module.jdk.home.cse542" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.cse542" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.cse542" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.cse542" value="-encoding UTF-8 -source 8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="cse542.output.dir" value="undefined"/>
+  <property name="cse542.testoutput.dir" value="undefined"/>
+  
+  <path id="cse542.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="cse542.module.production.classpath">
+    <path refid="${module.jdk.classpath.cse542}"/>
+  </path>
+  
+  <path id="cse542.runtime.production.module.classpath"/>
+  
+  <path id="cse542.module.classpath">
+    <path refid="${module.jdk.classpath.cse542}"/>
+  </path>
+  
+  <path id="cse542.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.cse542">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.cse542">
+    <patternset refid="excluded.from.module.cse542"/>
+  </patternset>
+  
+  
+  <target name="compile.module.cse542" depends="compile.module.cse542.production,compile.module.cse542.tests" description="Compile module cse542"/>
+  
+  <target name="compile.module.cse542.production" depends="register.custom.compilers" description="Compile module cse542; production classes"/>
+  
+  <target name="compile.module.cse542.tests" depends="register.custom.compilers,compile.module.cse542.production" description="compile module cse542; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.cse542" description="cleanup module">
+    <delete dir="${cse542.output.dir}"/>
+    <delete dir="${cse542.testoutput.dir}"/>
+  </target>
+</project>
