@@ -6,6 +6,7 @@
 package javafxswingapplication2;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 /**
  *
@@ -18,7 +19,9 @@ public class Normalized extends javax.swing.JFrame {
      */
     int teamsize;
     float [] Student_Norm;
-    public Normalized(float normalized[], int teamsize) {
+    private final String[] namelist;
+    public Normalized(float normalized[], int teamsize, String[] namelist) {
+        this.namelist = namelist;
         Student_Norm = new float[teamsize];
         int i = 0 ;
         for (i=0; i <teamsize; i++)
@@ -28,9 +31,9 @@ public class Normalized extends javax.swing.JFrame {
         this.teamsize = teamsize;
         
     }
-    public static Normalized round(float d, int decimalPlace) {
-        BigDecimal bd = new BigDecimal(Float.toString(d));
-        return bd;
+    public static String round(float d) {
+        DecimalFormat round = new DecimalFormat("#.##");
+        return round.format(d);
     }
    public void InitFrame()
    {  
@@ -81,7 +84,8 @@ public class Normalized extends javax.swing.JFrame {
         }
             
         if (this.teamsize <=2)
-            
+        
+        
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         label2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -90,38 +94,38 @@ public class Normalized extends javax.swing.JFrame {
         label1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         label1.setText("Normalized Grades");
 
-        jLabel1.setText("Name1");
-        jLabel4.setText(Float.toString(this.Student_Norm[0]));
+        jLabel1.setText(namelist[0]);
+        jLabel4.setText(round(this.Student_Norm[0]));
 
 
-        jLabel2.setText("Name2");
-        jLabel5.setText(Float.toString(this.Student_Norm[1]));
+        jLabel2.setText(namelist[1]);
+        jLabel5.setText(round(this.Student_Norm[1]));
 
 
         if (this.teamsize >2)
         {
-            jLabel3.setText("Name3");
-            jLabel6.setText(Float.toString(this.Student_Norm[2]));
+            jLabel3.setText(namelist[2]);
+            jLabel6.setText(round(this.Student_Norm[2]));
              
             if (this.teamsize >3)
             {
-                jLabel7.setText("Name4");
-                jLabel8.setText(Float.toString(this.Student_Norm[3]));
+                jLabel7.setText(namelist[3]);
+                jLabel8.setText(round(this.Student_Norm[3]));
                 
                 if (this.teamsize >4)
                 {
-                    jLabel9.setText("Name5");
-                    jLabel10.setText(Float.toString(this.Student_Norm[4]));
+                    jLabel9.setText(namelist[4]);
+                    jLabel10.setText(round(this.Student_Norm[4]));
 
                     if (this.teamsize >5)
                     {
-                        jLabel11.setText("Name6");
-                        jLabel12.setText(Float.toString(this.Student_Norm[5]));
+                        jLabel11.setText(namelist[5]);
+                        jLabel12.setText(round(this.Student_Norm[5]));
                         
                         if (this.teamsize >6)
                         {
-                            jLabel13.setText("Name7");
-                            jLabel14.setText(Float.toString(this.Student_Norm[6]));
+                            jLabel13.setText(namelist[6]);
+                            jLabel14.setText(round(this.Student_Norm[6]));
                         }
                     }
                 }
