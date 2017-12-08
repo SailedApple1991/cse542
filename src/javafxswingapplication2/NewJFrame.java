@@ -128,6 +128,7 @@ public class NewJFrame extends javax.swing.JFrame {
         int selected = 0;
         if (jCheckBox1.isSelected())
         {
+           
             selected = 1;
         }
         int teamsize = Integer.parseInt(numofteam);

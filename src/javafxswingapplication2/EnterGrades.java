@@ -1,3 +1,4 @@
+package javafxswingapplication2;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -5,6 +6,7 @@
  */
 
 import java.util.ArrayList;
+import javafxswingapplication2.Normalized;
 import javax.swing.JOptionPane;
 
 
@@ -157,8 +159,9 @@ public class EnterGrades extends javax.swing.JFrame {
         jLabel6.setText(namelist[5]);
 
         jLabel7.setText(namelist[6]);
-
-        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        
+        if(selected == 1){
+             jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
         jComboBox19.setSelectedIndex(3);
 
         jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
@@ -220,6 +223,81 @@ public class EnterGrades extends javax.swing.JFrame {
 
         jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
         jComboBox15.setSelectedIndex(3);
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        else{
+            jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+       
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox20.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
+        
+
+        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
+        
+            
+        }
+        
 
         jLabel8.setText("Professionalism");
 
