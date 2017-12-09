@@ -6,6 +6,7 @@ package javafxswingapplication2;
  */
 
 import java.util.ArrayList;
+import java.util.Random;
 import javafxswingapplication2.Normalized;
 import javax.swing.JOptionPane;
 
@@ -23,15 +24,13 @@ public class EnterGrades extends javax.swing.JFrame {
     private int teamsize;
     private int selected;
     String[] namelist = new String[7];
-
+    Random rand;
     public EnterGrades(int teamsize, int selected) {
 
         this.teamsize = teamsize;
         this.selected = selected;
-
-        if (this.selected == 1){
-            this.randomizeValues(this.teamsize);
-        }
+            
+       
 
     }
 
@@ -42,8 +41,8 @@ public class EnterGrades extends javax.swing.JFrame {
                 "Zork", "Mad", "Cry", "Zur", "Creo", "Azak", "Azur", "Rei", "Cro",
                 "Mar", "Luk" };
         String[] Middle = {"air", "ir", "mi", "sor", "mee", "clo",
-                "red", "cra", "ark", "arc", "miri", "lori", "cres", "mur", "zer",
-                "marac", "zoir", "slamar", "salmar", "urak"
+                "red", "cra", "ark", "arc", "mri", "lori", "cres", "mur", "zer",
+                "marac", "zoir", "slar", "sama", "urak"
         };
         String[] End = {"d", "ed", "ark", "arc", "es", "er", "der",
                 "tron", "med", "ure", "zur", "cred", "mur"
@@ -52,193 +51,11 @@ public class EnterGrades extends javax.swing.JFrame {
                 Middle[rand.nextInt(Middle.length)]+
                 End[rand.nextInt(End.length)];
     }
-
-    private void randomizeValues(int teamSize){
-
-        NameGen();
-        InitFrame();
-        //For student 1
-        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-        jComboBox19.setSelectedIndex(4);
-
-        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-        jComboBox16.setSelectedIndex(5);
-
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-        jComboBox13.setSelectedIndex(5);
-
-        //For student 2
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-        jComboBox10.setSelectedIndex(3);
-
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-        jComboBox7.setSelectedIndex(5);
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-        jComboBox4.setSelectedIndex(4);
-
-        int newSize = teamsize - 2;
-
-        if (newSize == 1){
-            //For student 3
-            jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox1.setSelectedIndex(2);
-
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox2.setSelectedIndex(2);
-
-            jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox3.setSelectedIndex(1);
-
-        }
-        else if (newSize == 2){
-            //For student 3
-            jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox1.setSelectedIndex(2);
-
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox2.setSelectedIndex(2);
-
-            jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox3.setSelectedIndex(1);
-
-            //For student 4
-            jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox6.setSelectedIndex(4);
-
-            jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox5.setSelectedIndex(4);
-
-            jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox8.setSelectedIndex(3);
-
-        }
-        else if (newSize == 3){
-            //For student 3
-            jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox1.setSelectedIndex(2);
-
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox2.setSelectedIndex(2);
-
-            jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox3.setSelectedIndex(1);
-
-            //For student 4
-            jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox6.setSelectedIndex(4);
-
-            jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox5.setSelectedIndex(4);
-
-            jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox8.setSelectedIndex(3);
-
-            //For student 5
-            jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox9.setSelectedIndex(5);
-
-            jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox12.setSelectedIndex(5);
-
-            jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox11.setSelectedIndex(5);
-        }
-        else if (newSize == 4){
-            //For student 3
-            jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox1.setSelectedIndex(2);
-
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox2.setSelectedIndex(2);
-
-            jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox3.setSelectedIndex(1);
-
-            //For student 4
-            jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox6.setSelectedIndex(4);
-
-            jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox5.setSelectedIndex(4);
-
-            jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox8.setSelectedIndex(3);
-
-            //For student 5
-            jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox9.setSelectedIndex(5);
-
-            jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox12.setSelectedIndex(5);
-
-            jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox11.setSelectedIndex(5);
-
-            //For student 6
-            jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox14.setSelectedIndex(2);
-
-            jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox17.setSelectedIndex(4);
-
-            jComboBox20.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox20.setSelectedIndex(2);
-
-
-        }
-        else {
-            //For student 3
-            jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox1.setSelectedIndex(2);
-
-            jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox2.setSelectedIndex(2);
-
-            jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox3.setSelectedIndex(1);
-
-            //For student 4
-            jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox6.setSelectedIndex(4);
-
-            jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox5.setSelectedIndex(4);
-
-            jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox8.setSelectedIndex(3);
-
-            //For student 5
-            jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox9.setSelectedIndex(5);
-
-            jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox12.setSelectedIndex(5);
-
-            jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox11.setSelectedIndex(5);
-
-            //For student 6
-            jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox14.setSelectedIndex(2);
-
-            jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox17.setSelectedIndex(4);
-
-            jComboBox20.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox20.setSelectedIndex(2);
-
-            //For student 7
-            jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox21.setSelectedIndex(4);
-
-            jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox18.setSelectedIndex(2);
-
-            jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-            jComboBox15.setSelectedIndex(5);
-        }
-
+//randomize the initial grade
+    private int randomizeValues(int min, int max){
+        int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+        System.out.println(randomNum);
+        return randomNum;
     }
 
     public void NameGen(){
@@ -353,8 +170,87 @@ public class EnterGrades extends javax.swing.JFrame {
 
         jLabel7.setText(namelist[6]);
         
+        
+/*
+        When selected is equal to 1, the flag of the check box has been detected. So we know the user choose
+        the option of 'previously entered the grade'. We will randomize the initial grade.
+        */        
+        
         if(selected == 1){
              jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox19.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox16.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox13.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox10.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox7.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox4.setSelectedIndex(randomizeValues(0,5));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox1.setSelectedIndex(randomizeValues(0,5));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox2.setSelectedIndex(randomizeValues(0,5));
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox3.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox6.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox5.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox8.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox9.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox12.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox11.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox14.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox17.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox20.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox20.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox21.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox18.setSelectedIndex(randomizeValues(1,5));
+
+        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
+        jComboBox15.setSelectedIndex(randomizeValues(1,5));
+            
+      
+        }
+        
+              
+/*
+        When selected is equal to 0, the flag of the check box has not been detected. So we know the user choose
+        the option of 'NO previously entered the grade'. We will set the initial grade all to 3 in case of all 0 
+        error. The normalization has no difference.
+        */       
+        else{
+            jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
         jComboBox19.setSelectedIndex(3);
 
         jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
@@ -367,7 +263,7 @@ public class EnterGrades extends javax.swing.JFrame {
         jComboBox10.setSelectedIndex(3);
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
-        jComboBox7.setSelectedIndex(3);
+       jComboBox7.setSelectedIndex(3);
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
         jComboBox4.setSelectedIndex(3);
@@ -417,78 +313,6 @@ public class EnterGrades extends javax.swing.JFrame {
         jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2", "3", "4", "5" }));
         jComboBox15.setSelectedIndex(3);
             
-            
-            
-            
-            
-            
-            
-            
-        }
-        else{
-            jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-       
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox20.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {"--", "0", "1", "2", "3", "4", "5" }));
-        
-
-        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--","0", "1", "2", "3", "4", "5" }));
-        
-            
         }
         
 
@@ -515,14 +339,14 @@ public class EnterGrades extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(26, 26, 26)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(56, 56, 56)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(jComboBox19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
