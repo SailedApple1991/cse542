@@ -30,7 +30,6 @@ public class EnterGrades extends javax.swing.JFrame {
         this.teamsize = teamsize;
         this.selected = selected;
             
-       
 
     }
 
@@ -81,14 +80,19 @@ public class EnterGrades extends javax.swing.JFrame {
 
     protected float [] Norm (int []Student_Total_Marks, int total)
     {
+        if(total == 0){
+            return null;
+        }
         float[] Norm_Student_Marks = new float[this.teamsize];
         int i = 0;
         for (i=0 ; i<this.teamsize; i++)
         {
             float num = (float) Student_Total_Marks[i];
             float den = (float) total;
-            Norm_Student_Marks[i] = num/den;
+            String numberAsString = String.format ("%.2f", num/den);
+            Norm_Student_Marks[i] = new Float(numberAsString).floatValue();
         }
+        
         return Norm_Student_Marks;
     }
 
@@ -888,7 +892,8 @@ public class EnterGrades extends javax.swing.JFrame {
         System.out.println("Normalising");
         System.out.println(total);
         System.out.println(Student_Total_Marks[0]);
-
+        System.out.println("test");
+      
         Norm_Student_Marks = Norm(Student_Total_Marks, total);
         Normalized e2 = new Normalized(Norm_Student_Marks,this.teamsize,namelist);
 

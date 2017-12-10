@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXSwingApplication2_browser.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXSwingApplication2.jnlp">
   <information>
     <title>JavaFXSwingApplication2</title>
     <vendor>krish</vendor>
@@ -8,9 +8,9 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXSwingApplication2.jar" size="32634" download="eager" />
+    <jar href="JavaFXSwingApplication2.jar" size="22218" download="eager" />
   </resources>
-  <applet-desc  width="800" height="600" main-class="javafxswingapplication2.NewJFrame"  name="JavaFXSwingApplication2" >
-  </applet-desc>
+  <application-desc main-class="javafxswingapplication2.NewJFrame"  name="JavaFXSwingApplication2" >
+  </application-desc>
   <update check="always"/>
 </jnlp>

@@ -2,8 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1835bac-f390-4675-9b96-713068149649" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/EnterGrades$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/EnterGrades$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/EnterGrades$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/EnterGrades.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/JavaFXSwingApplication2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/JavaFXSwingApplication2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/JavaFXSwingApplication2.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/JavaFXSwingApplication2_browser.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/dtjava.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/get_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/get_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/javafx-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/javafx-loading-100x100.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/javafx-loading-25x25.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/upgrade_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run341139343/web-files/upgrade_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/JavaFXSwingApplication2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/JavaFXSwingApplication2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/JavaFXSwingApplication2.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/JavaFXSwingApplication2_browser.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/dtjava.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/get_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/get_javafx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/javafx-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/javafx-loading-100x100.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/javafx-loading-25x25.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/upgrade_java.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/run416656429/web-files/upgrade_javafx.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/javafxswingapplication2/NewJFrame.class" afterPath="$PROJECT_DIR$/build/classes/javafxswingapplication2/NewJFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/javafxswingapplication2/Normalized$1.class" afterPath="$PROJECT_DIR$/build/classes/javafxswingapplication2/Normalized$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/javafxswingapplication2/Normalized.class" afterPath="$PROJECT_DIR$/build/classes/javafxswingapplication2/Normalized.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/JavaFXSwingApplication2.jar" afterPath="$PROJECT_DIR$/dist/JavaFXSwingApplication2.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/built-jar.properties" afterPath="$PROJECT_DIR$/build/built-jar.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/JavaFXSwingApplication2.html" afterPath="$PROJECT_DIR$/dist/JavaFXSwingApplication2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/JavaFXSwingApplication2.jnlp" afterPath="$PROJECT_DIR$/dist/JavaFXSwingApplication2.jnlp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/JavaFXSwingApplication2_browser.jnlp" afterPath="$PROJECT_DIR$/dist/JavaFXSwingApplication2_browser.jnlp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/project.properties" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javafxswingapplication2/NewJFrame.java" afterPath="$PROJECT_DIR$/src/javafxswingapplication2/NewJFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javafxswingapplication2/Normalized.java" afterPath="$PROJECT_DIR$/src/javafxswingapplication2/Normalized.java" />
     </list>
     <ignored path="cse542.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +88,8 @@
       <file leaf-file-name="EnterGrades.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javafxswingapplication2/EnterGrades.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2055">
-              <caret line="329" column="40" selection-start-line="329" selection-start-column="40" selection-end-line="329" selection-end-column="40" />
+            <state relative-caret-position="-690">
+              <caret line="146" column="40" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -113,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/src/javafxswingapplication2/NewJFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -181,6 +221,14 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="cse542" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; 1.8 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -677,16 +725,16 @@
       <workItem from="1512586662429" duration="2573000" />
       <workItem from="1512589563904" duration="341000" />
       <workItem from="1512590705318" duration="1248000" />
-      <workItem from="1512762395061" duration="214000" />
+      <workItem from="1512762395061" duration="230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4376000" />
+    <option name="totallyTimeSpent" value="4392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="128" y="23" width="1312" height="829" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -698,7 +746,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27716535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27716535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -997,15 +1045,15 @@
     <entry file="file://$PROJECT_DIR$/src/javafxswingapplication2/NewJFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javafxswingapplication2/EnterGrades.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="329" column="40" selection-start-line="329" selection-start-column="40" selection-end-line="329" selection-end-column="40" />
+        <state relative-caret-position="-690">
+          <caret line="146" column="40" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
           <folding />
         </state>
       </provider>
