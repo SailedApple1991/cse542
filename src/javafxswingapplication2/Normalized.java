@@ -20,6 +20,7 @@ public class Normalized extends javax.swing.JFrame {
     int teamsize;
     float [] Student_Norm;
     private final String[] namelist;
+    //initialize the class
     public Normalized(float normalized[], int teamsize, String[] namelist) {
         this.namelist = namelist;
         Student_Norm = new float[teamsize];
@@ -31,14 +32,15 @@ public class Normalized extends javax.swing.JFrame {
         this.teamsize = teamsize;
         
     }
+    //round the float variable
     public static String round(float d) {
         DecimalFormat round = new DecimalFormat("#.##");
         return round.format(d);
     }
+    //initialize the frame
    public void InitFrame()
    {  
        this.setVisible(true);
-       // create label and panels
        jPanel1 = new javax.swing.JPanel();
         label2 = new java.awt.Label();
         label1 = new java.awt.Label();
@@ -95,46 +97,43 @@ public class Normalized extends javax.swing.JFrame {
         label1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         label1.setText("Normalized Grades");
 
-        
-        // teamsize has to be at least 
-        jLabel1.setText(namelist[0]); //name
-        jLabel4.setText(round(this.Student_Norm[0])); //grade
+        jLabel1.setText(namelist[0]);
+        jLabel4.setText(round(this.Student_Norm[0]));
 
 
-        jLabel2.setText(namelist[1]); //name
-        jLabel5.setText(round(this.Student_Norm[1])); //grade
+        jLabel2.setText(namelist[1]);
+        jLabel5.setText(round(this.Student_Norm[1]));
 
 
         if (this.teamsize >2)
         {
-            jLabel3.setText(namelist[2]); //name
-            jLabel6.setText(round(this.Student_Norm[2])); //grade
+            jLabel3.setText(namelist[2]);
+            jLabel6.setText(round(this.Student_Norm[2]));
              
             if (this.teamsize >3)
             {
-                jLabel7.setText(namelist[3]); //name
-                jLabel8.setText(round(this.Student_Norm[3])); //grade
+                jLabel7.setText(namelist[3]);
+                jLabel8.setText(round(this.Student_Norm[3]));
                 
                 if (this.teamsize >4)
                 {
-                    jLabel9.setText(namelist[4]); //name
-                    jLabel10.setText(round(this.Student_Norm[4])); //grade
+                    jLabel9.setText(namelist[4]);
+                    jLabel10.setText(round(this.Student_Norm[4]));
 
                     if (this.teamsize >5)
                     {
-                        jLabel11.setText(namelist[5]); //name
-                        jLabel12.setText(round(this.Student_Norm[5]));//grade
+                        jLabel11.setText(namelist[5]);
+                        jLabel12.setText(round(this.Student_Norm[5]));
                         
                         if (this.teamsize >6)
                         {
-                            jLabel13.setText(namelist[6]);  //name
-                            jLabel14.setText(round(this.Student_Norm[6])); //grade
+                            jLabel13.setText(namelist[6]);
+                            jLabel14.setText(round(this.Student_Norm[6]));
                         }
                     }
                 }
             }    
         }      
-        
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(

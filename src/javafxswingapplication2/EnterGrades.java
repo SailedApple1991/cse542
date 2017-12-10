@@ -21,8 +21,8 @@ public class EnterGrades extends javax.swing.JFrame {
     /**
      * Creates new form EnterGrades
      */
-    private int teamsize;
-    private int selected;
+    private int teamsize; //initialize teamsize;
+    private int selected; //flag var for previouly enter grade or not. 
     String[] namelist = new String[7];
     Random rand;
     public EnterGrades(int teamsize, int selected) {
@@ -32,7 +32,9 @@ public class EnterGrades extends javax.swing.JFrame {
             
 
     }
-
+/*
+    method for random name generator
+    */
     private String NamesGenerator(){
         final java.util.Random rand = new java.util.Random();
         String[] Beginning = { "Kr", "Ca", "Ra", "Mrok", "Cru",
@@ -57,6 +59,7 @@ public class EnterGrades extends javax.swing.JFrame {
         return randomNum;
     }
 
+    //actual method that need to call for name initialization
     public void NameGen(){
         String Name1 = NamesGenerator();
         String Name2 = NamesGenerator();
@@ -74,10 +77,14 @@ public class EnterGrades extends javax.swing.JFrame {
         namelist[6] = Name7;
 
     }
+    //after initialization by calling nameGen, we call this method to gain Namelist
     public String[] getNameList(){
         return namelist;
     }
 
+    /*
+    Normalization method
+    */
     protected float [] Norm (int []Student_Total_Marks, int total)
     {
         if(total == 0){
@@ -96,6 +103,9 @@ public class EnterGrades extends javax.swing.JFrame {
         return Norm_Student_Marks;
     }
 
+    /*
+    frame initialization
+    */
     public void InitFrame()
     {
 
@@ -473,6 +483,10 @@ public class EnterGrades extends javax.swing.JFrame {
 
         pack();
 
+        /*
+        layout functions 
+        Set visible for elements depends on teams size 
+        */
         if (this.teamsize < 7)
         {
             jComboBox19.setVisible(false);
@@ -829,7 +843,10 @@ public class EnterGrades extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /*
+    button and label event listener
+    this part is for grades.
+    */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int[] Student_Total_Marks = new int[this.teamsize];
         float[] Norm_Student_Marks = new float[this.teamsize];
